@@ -28,9 +28,21 @@ Money is stored as **integer cents**. SA POS prices are treated as **VAT-inclusi
 ```bash
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+pip install -e .            # installs the sales_etl package from src/ (and the sme-sales-etl command)
 pytest -q
 python -m sales_etl samples/pos_daily.csv samples/shopify_orders.csv samples/yoco_payments.csv --db reporting.db
+# or: sme-sales-etl samples/*.csv --db reporting.db
 ```
+
+### CLI options
+
+| Option | Default | Meaning |
+| --- | --- | --- |
+| `inputs…` | (required) | One or more CSV or Excel (`.xlsx`/`.xls`) export files |
+| `--db PATH` | `reporting.db` | SQLite file to create/append to (re-runs are idempotent) |
+| `--kind {pos_csv,shopify,yoco,payments}` | auto-detect | Force the source format (only applies when a single input file is given; otherwise detected from filename/columns) |
+
+Excel input needs `openpyxl` (`pip install openpyxl`); CSV needs nothing extra.
 
 ```bash
 docker compose run --rm sme-sales-etl
