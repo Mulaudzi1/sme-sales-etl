@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sme-sales-etl"
+version = "1.0.0"
+description = "ETL for POS, Yoco and Shopify-style exports into a reporting SQLite star schema"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["pandas==2.2.3"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.4"]
+
+[project.scripts]
+sme-sales-etl = "sales_etl.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

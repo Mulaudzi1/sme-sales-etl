@@ -1,0 +1,4 @@
+Name,Email,Created at,Lineitem quantity,Lineitem name,Lineitem price,Lineitem sku,Billing City
+#1042,amina@example.co.za,2026-10-03 08:22:10 +0200,1,Shweshwe tote,320.00,BAG-SHWE,Cape Town
+#1042,amina@example.co.za,2026-10-03 08:22:10 +0200,2,Beaded coaster set,245.00,COAST-4,Cape Town
+#1043,joe@example.com,2026-10-03 16:01:00 +0200,1,Rooibos 250g,89.00,TEA-ROOIBOS,Johannesburg

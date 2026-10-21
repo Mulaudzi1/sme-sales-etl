@@ -1,0 +1,6 @@
+services:
+  sme-sales-etl:
+    build: .
+    volumes: ["etl-data:/data"]
+volumes:
+  etl-data:

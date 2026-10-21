@@ -1,0 +1,5 @@
+id,created_at,amount,fee,currency,status,payment_method,metadata_order,customer_email
+pay_01,2026-10-01T09:16:00+02:00,317.00,9.86,ZAR,successful,card,R-1001,thandi@example.co.za
+pay_02,2026-10-01T14:41:00+02:00,849.00,26.32,ZAR,successful,card,R-1002,sipho@example.co.za
+pay_03,2026-10-02T11:06:00+02:00,135.00,4.19,ZAR,successful,qr,R-1003,
+pay_04,2026-10-02T12:00:00+02:00,50.00,1.55,ZAR,failed,card,R-9999,ghost@example.co.za

@@ -1,0 +1,5 @@
+receipt_number,date,customer,email,sku,product,category,quantity,unit_price,discount,vat
+R-1001,2026-10-01 09:15,Thandi Dlamini,thandi@example.co.za,TEA-ROOIBOS,Rooibos 250g,Pantry,2,89.00,0,23.22
+R-1001,2026-10-01 09:15,Thandi Dlamini,thandi@example.co.za,MUG-ENAMEL,Enamel mug,Outdoors,1,139.00,0,18.13
+R-1002,2026-10-01 14:40,Sipho Nkosi,sipho@example.co.za,POT-3,Potjie no. 3,Outdoors,1,"R 899,00",50.00,110.74
+R-1003,2026-10-02 11:05,,,CHAK-400,Chakalaka 400g,Pantry,3,45.00,0,17.61
